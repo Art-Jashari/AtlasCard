@@ -1,0 +1,306 @@
+#concierege{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    @font-face {
+        font-family: Roboto;
+        src: url("../../assets/fonts/Roboto/Roboto-Light.ttf");
+        format: ("truetype");
+        font-weight: normal;
+    }
+
+    @font-face {
+        font-family: Plex-Sans;
+        src: url("../../assets/fonts/PlexSans/IBMPlexSans-Light.ttf");
+        format: ("truetype");
+        font-weight: normal;
+    }
+
+    .text-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1{
+            font-size: 90px;
+            margin-top: 300px;
+            font-family: Roboto;
+            color: #000;
+            
+        }
+
+        h3{
+            font-size: 45px;
+            margin: 0;
+            font-family: Roboto;
+            color: #000;
+        }
+
+        .paragraph{
+            display: flex;
+            width: 60%;
+            margin-bottom: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgba(0, 0, 0, 0.5);
+            font-family: Roboto;
+            font-size: 40px;
+            
+            p{
+                margin: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .chat-img-container{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        background-color: #e6e6e6;
+        img{
+            margin: 200px 0;
+            height: 500px;
+            border-radius: 30px;
+        }
+    }
+
+    .img-paragraph{
+        display: flex;
+        margin: 15px auto;
+        width: 60%;
+        align-items: center;
+        justify-content: center;
+        p{
+            text-align: center;
+            font-size: 15px;
+            font-family: Plex-Sans;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.5);
+
+        }
+    }
+
+    .grid-container{
+        display: grid;
+        width: 60%;
+        margin: 100px auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 200px 200px 200px;
+        
+
+        .grid-item{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+            border-bottom: 1px solid #a3a3a3;
+
+            h3{
+                width: 50%;
+                font-family: Roboto;
+                font-size: 30px;
+                color: #000;
+            }
+            p{
+                font-family: Roboto;
+                font-size: 25px;
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+        }
+
+        .grid-item:nth-child(1){
+            border-top: 1px solid #a3a3a3;
+        }
+
+        .grid-item:nth-child(2){
+            border-top: 1px solid #a3a3a3;
+        }
+
+
+    }
+
+    .img-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60%;
+        margin: 150px auto;
+
+        img{
+            height: 800px;
+            width: auto;
+            border-radius: 30px;
+        }
+
+        p{
+            text-align: center;
+            font-size: 15px;
+            font-family: Plex-Sans;
+            text-transform: uppercase;
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+    }
+}
+
+@media (max-width: 576px) {
+    #concierege{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    
+        @font-face {
+            font-family: Roboto;
+            src: url("../../assets/fonts/Roboto/Roboto-Light.ttf");
+            format: ("truetype");
+            font-weight: normal;
+        }
+    
+        @font-face {
+            font-family: Plex-Sans;
+            src: url("../../assets/fonts/PlexSans/IBMPlexSans-Light.ttf");
+            format: ("truetype");
+            font-weight: normal;
+        }
+    
+        .text-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h1{
+                font-size: 50px;
+                font-family: Roboto;
+                color: #000;
+                
+            }
+
+            h3{
+                font-size: 25px;
+                margin: 0;
+                font-family: Roboto;
+                color: #000;
+            }
+
+            .paragraph{
+                display: flex;
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+                color: rgba(0, 0, 0, 0.5);
+                font-family: Roboto;
+                font-size: 20px;
+                
+                p{
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
+    
+        .chat-img-container{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6e6e6;
+            img{
+                margin: 100px 0;
+                height: 250px;
+                width: auto;
+                border-radius: 30px;
+                object-fit: contain;
+            }
+        }
+    
+        .img-paragraph{
+            display: flex;
+            margin: 15px auto;
+            width: 60%;
+            align-items: center;
+            justify-content: center;
+            p{
+                text-align: center;
+                font-size: 12px;
+                font-family: Plex-Sans;
+                text-transform: uppercase;
+                color: rgba(0, 0, 0, 0.5);
+    
+            }
+        }
+    
+        .grid-container{
+            display: grid;
+            width: 60%;
+            margin: 50px auto;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 200px 200px 200px;
+            
+
+            .grid-item{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                text-align: left;
+                border-bottom: 1px solid #a3a3a3;
+
+                h3{
+                    width: 50%;
+                    font-family: Roboto;
+                    font-size: 15px;
+                    color: #000;
+                }
+                p{
+                    font-family: Roboto;
+                    font-size: 12px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+
+            }
+
+            .grid-item:nth-child(1){
+                border-top: 1px solid #a3a3a3;
+            }
+
+            .grid-item:nth-child(2){
+                border-top: 1px solid #a3a3a3;
+            }
+
+
+        }
+    
+        .img-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+            margin: 150px auto;
+    
+            img{
+                height: 300px;
+                width: auto;
+                border-radius: 30px;
+            }
+    
+            p{
+                text-align: center;
+                font-size: 12px;
+                font-family: Plex-Sans;
+                text-transform: uppercase;
+                color: rgba(0, 0, 0, 0.5);
+            }
+    
+        }
+    }
+    
+}

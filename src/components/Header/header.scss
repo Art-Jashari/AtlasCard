@@ -1,0 +1,323 @@
+.header{
+    display: flex;
+    position: fixed;
+    width: 60%;
+    top: 0;
+    left: 50%;
+    margin-top: 10px;
+    transform: translateX(-50%);
+
+    @font-face {
+        font-family: Plex-Sans;
+        src: url("../../assets/fonts/PlexSans/IBMPlexSans-Light.ttf");
+        format: ("truetype");
+        font-weight: normal;
+    }
+
+
+    .MuiPaper-root{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 20px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(11.3px);
+        -webkit-backdrop-filter: blur(11.3px);
+        cursor: pointer;
+
+        .MuiButtonBase-root{
+            display: flex;
+            padding: 0;
+            height: 60px;
+            img{
+                margin: 0 20px;
+                height: 40px;
+            }
+
+            .plus-img{
+                transform: rotate(0);
+                transition: ease-in 0.3s;
+            }
+
+            .rotate-img{
+                transform: rotate(45deg);
+                transition: ease-in 0.3s;
+            }
+        }
+
+        .MuiAccordionSummary-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+
+        .MuiAccordionDetails-root{
+            display: grid;
+            padding: 0;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 400px 60px;
+            border-top: 1px solid #a3a3a3;
+
+            .list{
+                display: flex;
+                flex-direction: column;
+                margin: 0 20px;
+                
+                h3{
+                    text-transform: uppercase;
+                    font-family: Plex-Sans;
+                    margin-top: 45px;
+                    margin-bottom: 0;
+                    font-size: 15px;
+                    color: #858280;
+                }
+
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    list-style: none;
+                    li{
+                        margin-top: 30px;
+                        a{
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            color: #000;
+                            font-family: Plex-Sans;
+                            font-size: 15px;
+                            transition: color ease-in 0.2s;
+
+                        }
+                        a:hover{
+                            color: blue;
+
+                        }
+                    }
+                }
+
+            }
+
+            .btn-img{
+                display: flex;
+                height: 100%;
+                margin: 0 20px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                    a{
+                        margin-top: 30px;
+                        padding: 0 15px;
+                        border-radius: 25px;
+                        background-color: transparent;
+                        border: 1px solid #a3a3a3;
+                        color: #000;
+                        font-size: 15px;    
+                        font-family: Plex-Sans;
+                        text-transform: uppercase;
+                        transition: all ease-in 0.3s;
+                        box-shadow: none;
+                    }
+
+                    a:hover{
+                        background-color: blue;
+                        border: 1px solid blue;
+                        color: #fff;
+                        cursor: pointer;
+
+                    }
+
+                img{
+                    height: 125px;
+                    object-fit: contain;
+                    transform: translateX(90px);
+                    
+                }
+            }
+
+            .footnote{
+                display: flex;
+                width: 100%;
+                place-items: center;
+                grid-column: 1 / span 4;
+                height: 60px;
+                border-top: 1px solid #a3a3a3 ;
+                p{
+                    padding-left: 20px;
+                    text-transform: uppercase;
+                    font-family: Plex-Sans;
+                    font-size: 12px;
+                    color: #858280;
+                    font-weight: bold;
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width: 576px) {
+    .header{
+        display: flex;
+        position: fixed;
+        width: 80%;
+        top: 0;
+        left: 50%;
+        margin-top: 10px;
+        transform: translateX(-50%);
+    
+        @font-face {
+            font-family: Plex-Sans;
+            src: url("../../assets/fonts/PlexSans/IBMPlexSans-Light.ttf");
+            format: ("truetype");
+            font-weight: normal;
+        }
+    
+    
+        .MuiPaper-root{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(11.3px);
+            -webkit-backdrop-filter: blur(11.3px);
+            cursor: pointer;
+    
+            .MuiButtonBase-root{
+                display: flex;
+                padding: 0;
+                height: 50px;
+                img{
+                    margin: 0 20px;
+                    height: 30px;
+                }
+    
+                .plus-img{
+                    transform: rotate(0);
+                    transition: ease-in 0.3s;
+                }
+    
+                .rotate-img{
+                    transform: rotate(45deg);
+                    transition: ease-in 0.3s;
+                }
+            }
+    
+            .MuiAccordionSummary-content{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+    
+    
+            .MuiAccordionDetails-root{
+                display: grid;
+                padding: 0;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 300px 100px 50px;
+                border-top: 1px solid #a3a3a3;
+    
+                .list{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 20px;
+                    
+                    h3{
+                        text-transform: uppercase;
+                        font-family: Plex-Sans;
+                        margin-top: 45px;
+                        margin-bottom: 0;
+                        font-size: 12px;
+                        color: #858280;
+                    }
+    
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        li{
+                            margin-top: 20px;
+                            a{
+                                text-decoration: none;
+                                text-transform: uppercase;
+                                color: #000;
+                                font-family: Plex-Sans;
+                                font-size: 12px;
+                                transition: color ease-in 0.2s;
+    
+                            }
+                            a:hover{
+                                color: blue;
+    
+                            }
+                        }
+                    }
+    
+                }
+    
+                .btn-img{
+                    display: flex;
+                    height: 100%;
+                    grid-column: 1/ span 4;
+                    margin: 0 20px;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+    
+                        a{
+                            margin-top: 30px;
+                            padding:  25px;
+                            border-radius: 25px;
+                            background-color: transparent;
+                            border: 1px solid #a3a3a3;
+                            color: #000;
+                            font-size: 10px;    
+                            font-family: Plex-Sans;
+                            text-transform: uppercase;
+                            transition: all ease-in 0.3s;
+                            box-shadow: none;
+                        }
+    
+                        a:hover{
+                            background-color: blue;
+                            border: 1px solid blue;
+                            color: #fff;
+                            cursor: pointer;
+    
+                        }
+    
+                    img{
+                        display: none;
+                    }
+                }
+    
+                .footnote{
+                    display: flex;
+                    width: 100%;
+                    place-items: center;
+                    grid-column: 1 / span 4;
+                    height: 60px;
+                    border-top: 1px solid #a3a3a3 ;
+                    p{
+                        padding-left: 20px;
+                        text-transform: uppercase;
+                        font-family: Plex-Sans;
+                        font-size: 12px;
+                        color: #858280;
+                        font-weight: bold;
+                    }
+                }
+            }
+    
+    
+        }
+    }
+
+    
+}
